@@ -43,7 +43,7 @@ public class StudentDashboard {
                 break;
 
                 case 4:
-                    assignmentPriorityChecker();
+                    AssignmentPriorityChecker.priorityChecker(scnr);
                 break;
 
                 case 5:
@@ -91,10 +91,6 @@ public class StudentDashboard {
                               "8: View Stats\n" +
                               "9: Exit Menu\n"
             );
-        }
-
-        public static void assignmentPriorityChecker() {
-            System.out.println("Coming Soon");
         }
 
         public static void randomStudyBreakActivity() {
