@@ -16,10 +16,11 @@ public class StudyTimer {
                            "when you are done.\n");
         System.out.println();
 
-        System.out.print("Please enter the time you need to Study: ");
+        System.out.print("Please enter the time (in minutes) you need to Study: ");
         double timer = scnr.nextDouble();
 
         
+
     }
     
 }
