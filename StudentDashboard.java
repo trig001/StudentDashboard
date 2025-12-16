@@ -35,11 +35,11 @@ public class StudentDashboard {
                 break;
 
                 case 2:
-                    gradeCalculator.calculator(scnr);
+                    GradeCalculator.calculator(scnr);
                 break;
 
                 case 3:
-                    studyTimer();
+                    StudyTimer.timer(scnr);
                 break;
 
                 case 4:
@@ -91,11 +91,6 @@ public class StudentDashboard {
                               "8: View Stats\n" +
                               "9: Exit Menu\n"
             );
-        }
-
-
-        public static void studyTimer() {
-            System.out.println("Coming Soon");
         }
 
         public static void assignmentPriorityChecker() {
