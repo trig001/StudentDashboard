@@ -28,10 +28,6 @@ public class StudyTimer {
             }
         } while (timer < 1 || timer >120);
 
-        double quarter = timer / 4;
-        int checkpoint = (int) Math.round(timer - quarter);
-        int remainingPercent = 100;
-
         for (int timeLeft = timer; timeLeft > 0; timeLeft --) {
 
             if (timeLeft == Math.round(timer * .75)) {
