@@ -14,6 +14,7 @@ public class StudyTimer {
         System.out.print("Welcome to your trust study timer. Just set the time\n" +
                          "you want to study and the alarm will let you know\n" +
                          "when you are done.\n");
+                         
         System.out.println();
 
         int timer;
@@ -26,7 +27,23 @@ public class StudyTimer {
             }
         } while (timer < 1 || timer >120);
 
+        double quarter = timer / .25;
+        int checkpoint = (int) Math.round(timer - quarter);
+        int remainingPercent = 100;
+
         for (int timeLeft = timer; timeLeft > 0; timeLeft --) {
+
+            if (quarter > 0 && timeLeft == checkpoint) {
+                remainingPercent -= 25;
+                System.out.println(remainingPercent + "% remaining");
+                checkpoint -= quarter;
+            }
+
+            if (timeLeft == (timer / 2)) {
+                System.out.println("You have been studing hard, maybe its time for a break?");
+            }
+
+            System.out.printf("You have %d minutes left.\n", timeLeft);
 
             try {
                 Thread.sleep(1000);
